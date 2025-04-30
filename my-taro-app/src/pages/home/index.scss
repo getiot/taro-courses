@@ -1,0 +1,26 @@
+.home-container {
+  background-color: orange;
+  padding: 30px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.home-banner {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.home-title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  background-color: green !important;
+  color: orange;
+  width: 200px;
+}
