@@ -1,0 +1,81 @@
+.container {
+  padding: 20px;
+  background-color: mediumseagreen;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  .input {
+    flex: 1;
+    height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    /* 设置字体大小，确保 placeholder 不会超出 */
+    /* line-height: 60px; /* 使 placeholder 与输入文字垂直居中 */
+    box-sizing: border-box;
+    /* 防止 padding 导致高度溢出问题 */
+  }
+
+  .add-btn {
+    flex: 1;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    background-color: #6190e8;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+}
+
+.list {
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // 让内容和删除按钮两端对齐
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+
+    // &.done {
+    //   text-decoration: line-through;
+    //   color: #444;
+    // }
+
+    .todo-text {
+      flex: 1; // 占据剩余空间
+      font-size: 20px;
+      word-break: break-all;
+    }
+
+    .todo-text.done {
+      text-decoration: line-through;
+      color: #444;
+    }
+
+    .delete-btn {
+      background-color: #ff4d4f;
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      flex-shrink: 0; // 防止按钮被压缩
+    }
+  }
+
+  .empty {
+    color: #666;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
